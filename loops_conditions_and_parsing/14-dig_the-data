@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script will be sorting my answer
+
+awk '{print $1, $9}' apache-access.log | sort | uniq -c | sort -n
